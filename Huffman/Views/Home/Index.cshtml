@@ -6,12 +6,48 @@
     {
         string cookieToken, formToken;
         AntiForgery.GetTokens(null, out cookieToken, out formToken);
-        return cookieToken + ":" + formToken;                
+        return cookieToken + ":" + formToken;
     }
 }
 
-<section id=main-sec>
+<section id="main-sec">
+    <h1 class="title">Em construção</h1>
+    <div id="ctrl">
+        <input type="file" id="txtFile" />
+        <input type="button" value="send" onclick="sendText()" />
+    </div>
 
-  <h1 class=title>Em construção</h1>
+    <div id="txt-container">
+        <textarea id="txt-in" cols="51" rows="20">content</textarea>
+        <textarea id="txt-out" cols="51" rows="20">content</textarea>
+    </div>
 
 </section>
+
+<script>
+    function sendText() {
+
+        var file = document.querySelector("#txtFile").files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.readAsText(file, "UTF-8");
+            reader.onload = function (evt) {
+                $.ajax({
+                    url: "/Home/ProcessFile",
+                    type: "POST",
+                    data: { txt: evt.target.result },
+                    DataType: "text",
+                    success: function (res) {
+                        $("#txt-out").val(res.encodedText);
+                    },
+                    error: function (err) {
+                        alert(err);
+                    }
+                });
+            }
+            reader.onerror = function (evt) {
+                alert('oi');
+            }
+        }
+    };
+</script>

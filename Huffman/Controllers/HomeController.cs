@@ -13,5 +13,11 @@ namespace Huffman.Controllers
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
+
+        public JsonResult ProcessFile(string txt)
+        {
+            txt = txt.ToLower() + "ALFACE";
+            return Json(new {encodedText=txt}, JsonRequestBehavior.AllowGet);
+        }
     }
 }
