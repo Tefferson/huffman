@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,8 +11,13 @@ namespace Domain
     public class Codec
     {
         public const char Separador = (char)0;
+        private string txt;
 
         public Codec() { }
+
+        public Codec(string txt) {
+            this.txt = txt;
+        }
 
         public bool ByteArrayToFile(string fileName, byte[] byteArray)
         {
@@ -66,9 +72,23 @@ namespace Domain
         {
             byte[] bytesLidos = File.ReadAllBytes(caminho + nomeDoArquivo);
 
-            Simbolo arvore = MontarArvore(bytesLidos);
+            return CodificarTexto(bytesLidos);
+        }
 
-            return CodificarBytesLidos(bytesLidos, arvore).ToByteArray();
+        public byte[] CodificarTexto()
+        {
+            if(txt == null) return new byte[' '];
+
+            byte[] bytesDoTexto = txt.ToCharArray().Select(c => (byte)c).ToArray();
+
+            return CodificarTexto(bytesDoTexto);
+        }
+
+        private byte[] CodificarTexto(byte[] bytesParaProcessar)
+        {
+            Simbolo arvore = MontarArvore(bytesParaProcessar);
+
+            return CodificarBytesLidos(bytesParaProcessar, arvore).ToByteArray();
         }
 
         private Simbolo MontarArvore(byte[] bytesLidos)

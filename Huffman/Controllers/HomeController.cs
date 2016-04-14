@@ -16,8 +16,8 @@ namespace Huffman.Controllers
 
         public JsonResult ProcessFile(string txt)
         {
-            txt = txt.ToLower() + "ALFACE";
-            return Json(new {encodedText=txt}, JsonRequestBehavior.AllowGet);
+            byte[] bytes = new Domain.Codec(txt).CodificarTexto();
+            return Json(new {encodedText=bytes}, JsonRequestBehavior.AllowGet);
         }
     }
 }

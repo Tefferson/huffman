@@ -1,6 +1,8 @@
+C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\obj\Debug\Huffman.csprojResolveAssemblyReference.cache
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\Huffman.dll
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\Huffman.pdb
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\Antlr3.Runtime.dll
+C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\Domain.dll
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\DotNetOpenAuth.AspNet.dll
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\DotNetOpenAuth.Core.dll
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\DotNetOpenAuth.OAuth.Consumer.dll
@@ -27,6 +29,7 @@ C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffma
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\WebGrease.dll
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\WebMatrix.Data.dll
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\WebMatrix.WebData.dll
+C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\Domain.pdb
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\EntityFramework.xml
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\Newtonsoft.Json.xml
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\System.Web.Helpers.xml
@@ -78,4 +81,3 @@ C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffma
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\obj\Debug\Huffman.dll
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\obj\Debug\Huffman.pdb
-C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\obj\Debug\Huffman.csprojResolveAssemblyReference.cache
