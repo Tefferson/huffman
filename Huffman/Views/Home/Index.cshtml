@@ -13,41 +13,46 @@
 <section id="main-sec">
     <h1 class="title">Em construção</h1>
     <div id="ctrl">
-        <input type="file" id="txtFile" />
+        <input type="file" onchange="setInputText()" id="txtFile" />
         <input type="button" value="send" onclick="sendText()" />
     </div>
 
     <div id="txt-container">
-        <textarea id="txt-in" cols="51" rows="20">content</textarea>
-        <textarea id="txt-out" cols="51" rows="20">content</textarea>
+        <textarea id="txt-in" cols="51" rows="20" placeholder="entrada..."></textarea>
+        <textarea id="txt-out" cols="51" rows="20" placeholder="saída..."></textarea>
     </div>
 
 </section>
 
 <script>
-    function sendText() {
 
+    function setInputText(){
         var file = document.querySelector("#txtFile").files[0];
         if (file) {
             var reader = new FileReader();
-            reader.readAsText(file, "UTF-8");
+            reader.readAsText(file, "ASCII");
             reader.onload = function (evt) {
-                $.ajax({
-                    url: "/Home/ProcessFile",
-                    type: "POST",
-                    data: { txt: evt.target.result },
-                    DataType: "text",
-                    success: function (res) {
-                        $("#txt-out").val(res.encodedText);
-                    },
-                    error: function (err) {
-                        alert(err);
-                    }
-                });
+                document.getElementById('txt-in').value = evt.target.result;
             }
             reader.onerror = function (evt) {
                 alert('oi');
-            }
+            }            
         }
+    };
+
+    function sendText() {        
+        $.ajax({
+            url: "/Home/ProcessFile",
+            type: "POST",
+            data: { txt: document.getElementById('txt-in').value },
+            DataType: "text",
+            success: function (res) {
+                console.log(res.encodedText.length);
+                $("#txt-out").val(res.encodedText.reduce((a,b)=>a+String.fromCharCode(b)));
+            },
+            error: function (err) {
+                alert(err);
+            }
+        });
     };
 </script>

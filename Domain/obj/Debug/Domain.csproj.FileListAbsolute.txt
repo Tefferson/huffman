@@ -1,4 +1,5 @@
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Domain\bin\Debug\Domain.dll
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Domain\bin\Debug\Domain.pdb
+C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Domain\obj\Debug\Domain.dll
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Domain\obj\Debug\Domain.pdb

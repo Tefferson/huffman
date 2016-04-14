@@ -1,4 +1,3 @@
-C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\obj\Debug\Huffman.csprojResolveAssemblyReference.cache
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\Huffman.dll
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\Huffman.pdb
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\Antlr3.Runtime.dll
@@ -79,5 +78,6 @@ C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffma
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\ru\System.Spatial.resources.dll
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\obj\Debug\Huffman.csprojResolveAssemblyReference.cache
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\obj\Debug\Huffman.dll
 C:\Users\tefferson.guterres\documents\visual studio 2012\Projects\Huffman\Huffman\obj\Debug\Huffman.pdb
