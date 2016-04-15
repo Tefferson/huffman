@@ -1,0 +1,8 @@
+C:\Users\Tefferson\Documents\huffman\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Tefferson\Documents\huffman\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Tefferson\Documents\huffman\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Tefferson\Documents\huffman\ConsoleApplication1\bin\Debug\Domain.dll
+C:\Users\Tefferson\Documents\huffman\ConsoleApplication1\bin\Debug\Domain.pdb
+C:\Users\Tefferson\Documents\huffman\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Tefferson\Documents\huffman\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Tefferson\Documents\huffman\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

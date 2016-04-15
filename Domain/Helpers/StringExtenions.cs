@@ -35,13 +35,18 @@ namespace System
 
         private static bool[] ToBinaryArray(string strData)
         {
-            byte[] data = strData.ToCharArray().Select(c => (byte)c).ToArray();
+            byte[] data = strData.ToByteArray();
             return data.Select(c => c == '1').ToArray();
         }
 
         public static BitArray ToBitArray(this string data)
         {
             return new BitArray(ToBinaryArray(data));
+        }
+
+        public static byte[] ToByteArray(this string data)
+        {
+            return data.ToCharArray().Select(c => (byte)c).ToArray();
         }
     }
 }

@@ -66,7 +66,10 @@
             dataType: "text",
             success: function (res) {
                 var encodedText = JSON.parse(res).encodedText;
-                $("#txt-out").val(encodedText.reduce((a, b) =>a + String.fromCharCode(b)));
+                console.log(encodedText.filter(e=>e===192));
+                var value = "";
+                encodedText.forEach((a) => console.log(String.fromCharCode(a)));
+                $("#txt-out").val(value);
             },
             error: function (err) {
                 alert(err);
@@ -79,9 +82,7 @@
             url: "/Home/DecodeFile",
             type: "POST",
             data: { txt: $('#txt-in').val() },
-            dataType: "text",
             success: function (res) {
-                console.log(res);
                 $("#txt-out").val(res.resultText);
             },
             error: function (err) {
@@ -89,6 +90,16 @@
             }
         });
     };
+
+    function str2bytes(str) {
+        var bytes = [];
+        var len = str.length;
+        for (var i = 0; i < len; i++) {
+            var char = str.charCodeAt(i);
+            bytes.push(char & 0xFF);
+        }
+        return bytes;
+    }
 
     function sendText() {
         var encode = document.querySelector('#radio-encode').checked;

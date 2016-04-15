@@ -79,7 +79,7 @@ namespace Domain
         {
             if(txt == null) return new byte[' '];
 
-            byte[] bytesDoTexto = txt.ToCharArray().Select(c => (byte)c).ToArray();
+            byte[] bytesDoTexto = txt.ToByteArray();
 
             return CodificarTexto(bytesDoTexto);
         }
@@ -121,7 +121,7 @@ namespace Domain
         public string Decodificar() {
             if (txt == null) return string.Empty;
 
-            byte[] bytesDoTexto = txt.ToCharArray().Select(c => (byte)c).ToArray();
+            byte[] bytesDoTexto = txt.ToByteArray();
 
             return Decodificar(bytesDoTexto);
         }
