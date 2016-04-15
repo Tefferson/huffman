@@ -65,7 +65,8 @@
             data: { txt: $('#txt-in').val() },
             dataType: "text",
             success: function (res) {
-                $("#txt-out").val(res.encodedText.reduce((a, b) =>a + String.fromCharCode(b)));
+                var encodedText = JSON.parse(res).encodedText;
+                $("#txt-out").val(encodedText.reduce((a, b) =>a + String.fromCharCode(b)));
             },
             error: function (err) {
                 alert(err);
@@ -80,6 +81,7 @@
             data: { txt: $('#txt-in').val() },
             dataType: "text",
             success: function (res) {
+                console.log(res);
                 $("#txt-out").val(res.resultText);
             },
             error: function (err) {
