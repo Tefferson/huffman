@@ -118,6 +118,14 @@ namespace Domain
             return (bitsNaoUtilizadosNoFinal + tamanhoReservadoParaOAlfabeto + encaminhamentos + textoCodificado).ToBitArray();
         }
 
+        public string Decodificar() {
+            if (txt == null) return string.Empty;
+
+            byte[] bytesDoTexto = txt.ToCharArray().Select(c => (byte)c).ToArray();
+
+            return Decodificar(bytesDoTexto);
+        }
+
         public string Decodificar(byte[] bytes)
         {
             BitArray bits = new BitArray(bytes);

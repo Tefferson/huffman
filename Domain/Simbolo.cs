@@ -21,10 +21,10 @@ namespace Domain
             Terminal = true;
         }
 
-        public Simbolo(string encaimnhamento)
+        public Simbolo(string encaminhamento)
         {
-            Encaminhamento = encaimnhamento;
-            Terminal = encaimnhamento.Length == 1;
+            Encaminhamento = encaminhamento;
+            Terminal = encaminhamento.Length == 1;
         }
 
         public Simbolo(Simbolo simboloAcima, Simbolo simboloAbaixo)
