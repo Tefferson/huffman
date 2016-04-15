@@ -1,8 +1,8 @@
-C:\Users\tefferson.guterres\Documents\Visual Studio 2012\Projects\Huffman\Domain\bin\Debug\Domain.dll
-C:\Users\tefferson.guterres\Documents\Visual Studio 2012\Projects\Huffman\Domain\bin\Debug\Domain.pdb
-C:\Users\tefferson.guterres\Documents\Visual Studio 2012\Projects\Huffman\Domain\obj\Debug\Domain.dll
-C:\Users\tefferson.guterres\Documents\Visual Studio 2012\Projects\Huffman\Domain\obj\Debug\Domain.pdb
 C:\Users\Tefferson\Documents\huffman\Domain\bin\Debug\Domain.dll
 C:\Users\Tefferson\Documents\huffman\Domain\bin\Debug\Domain.pdb
 C:\Users\Tefferson\Documents\huffman\Domain\obj\Debug\Domain.dll
 C:\Users\Tefferson\Documents\huffman\Domain\obj\Debug\Domain.pdb
+C:\Users\tefferson.guterres\Documents\Visual Studio 2012\Projects\Huffman\Domain\bin\Debug\Domain.dll
+C:\Users\tefferson.guterres\Documents\Visual Studio 2012\Projects\Huffman\Domain\bin\Debug\Domain.pdb
+C:\Users\tefferson.guterres\Documents\Visual Studio 2012\Projects\Huffman\Domain\obj\Debug\Domain.dll
+C:\Users\tefferson.guterres\Documents\Visual Studio 2012\Projects\Huffman\Domain\obj\Debug\Domain.pdb

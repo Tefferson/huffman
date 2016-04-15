@@ -84,7 +84,7 @@ namespace Domain
             return CodificarTexto(bytesDoTexto);
         }
 
-        private byte[] CodificarTexto(byte[] bytesParaProcessar)
+        public byte[] CodificarTexto(byte[] bytesParaProcessar)
         {
             Simbolo arvore = MontarArvore(bytesParaProcessar);
 

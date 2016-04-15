@@ -48,7 +48,7 @@
         var file = document.querySelector("#txt-file").files[0];
         if (file) {
             var reader = new FileReader();
-            reader.readAsText(file, "ASCII");
+            reader.readAsText(file, "US-ASCII");
             reader.onload = function (evt) {
                 $('#txt-in').val(evt.target.result);
             }
@@ -65,11 +65,10 @@
             data: { txt: $('#txt-in').val() },
             dataType: "text",
             success: function (res) {
-                var encodedText = JSON.parse(res).encodedText;
-                console.log(encodedText.filter(e=>e===192));
-                var value = "";
-                encodedText.forEach((a) => console.log(String.fromCharCode(a)));
-                $("#txt-out").val(value);
+                var bytes = JSON.parse(res).encodedText;
+                encodedText = '';
+                bytes.forEach(b => encodedText+=String.fromCharCode(b));
+                $("#txt-out").val(encodedText);
             },
             error: function (err) {
                 alert(err);
